@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>responsive</title>
+</head>
+<style>
+	.container{
+		display: flex;
+		gap: 10px 1%;
+	}
+	.wrapper{
+		display: flex;
+		flex-direction: column;
+		width: 25%;
+	}
+	.wrapper img{
+		width: 100%;
+		height: auto;
+	}
+	.wrapper h3{
+		font-family: poppins;
+		font-size: 25px;
+		text-align: left;
+		padding: 10px 10px 0 10px;
+	}
+	.wrapper p{
+		font-family: poppins;
+		font-size: 15px;
+		text-align: left;
+		padding: 0 10px 10px 10px;
+
+	}
+
+	@media screen and (max-width:1000px){
+		.container{
+			flex-wrap: wrap;
+		}
+		.wrapper{
+			width: 49%;
+		}
+	}	
+	@media screen and (max-width:500px){
+		.wrapper{
+			width: 100%;
+		}
+		.warpper h3{
+			font-size: 20px;
+		}
+		.warpper p{
+			font-size: 10px;
+		}
+	}
+
+</style>
+
+<body>
+	<div class="container">
+		
+		<div class="wrapper">
+			<img src="menu2.jpg" alt="">
+			<h3>habadabado</h3>
+			<p>In 1987, I began my journey in Italy.</p>
+		</div>
+		
+		<div class="wrapper">
+			<img src="menu3.jpg" alt="">
+			<h3>habadabado</h3>
+			<p>In 1987, I began my journey in Italy.</p>
+		</div>
+
+		<div class="wrapper">
+			<img src="menu4.jpg" alt="">
+			<h3>habadabado</h3>
+			<p>In 1987, I began my journey in Italy.</p>
+		</div>
+
+		<div class="wrapper">
+			<img src="menu5.jpg" alt="">
+			<h3>habadabado</h3>
+			<p>In 1987, I began my journey in Italy.</p>
+		</div>
+		
+
+
+
+
+	</div>
+
+
+
+</body>
+</html>
